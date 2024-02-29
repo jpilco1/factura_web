@@ -35,7 +35,7 @@ public class ClienteController {
 }
 	@GetMapping("/findOne")
 	public String findOne(@RequestParam("idCliente") @Nullable Integer idCliente
-			,@RequestParam("opcion")@Nullable Integer opcion
+			,@RequestParam("opcion") @Nullable Integer opcion
 			,Model model
 			) {
 		if(idCliente !=null) {
@@ -58,7 +58,7 @@ public class ClienteController {
 			) {
 		if(idCliente==null) clienteService.add(0,cedula,nombre,apellido,edad,fechaNacimiento,direccion,telefono,correo);
 		else clienteService.up(idCliente,cedula, nombre, apellido, edad, fechaNacimiento, direccion,telefono, correo);
-		return"redirect:/clientes/findAll";
+		return "redirect:/clientes/findAll";
 }
 @GetMapping("/del")
 public String del(@RequestParam("idCliente")@Nullable Integer idCliente) {

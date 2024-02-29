@@ -12,10 +12,10 @@ public interface ClienteService {
 	
 	public Cliente findOne(int id);
 	
-	public void add(int idCliente, String nombre, String apellido, String cedula, int edad, Date fechaNacimiento,
+	public void add(int idCliente, String cedula, String nombre, String apellido,  int edad, Date fechaNacimiento,
 			String direccion, String correo, String telefono);
 	
-	public void up(int idCliente, String nombre, String apellido, String cedula, int edad, Date fechaNacimiento,
+	public void up(int idCliente, String cedula, String nombre, String apellido,  int edad, Date fechaNacimiento,
 			String direccion, String correo, String telefono);
 	
 	public void del(int id);

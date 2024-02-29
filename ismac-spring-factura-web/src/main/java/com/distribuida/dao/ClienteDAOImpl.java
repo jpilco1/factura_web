@@ -44,9 +44,11 @@ public class ClienteDAOImpl implements ClienteDAO {
 	}
 
 	@Override
+	@Transactional
 	public void up(Cliente Cliente) {
 		// TODO Auto-generated method stub
-		
+		Session session = sessionFactory.getCurrentSession();
+		session.saveOrUpdate(Cliente);
 	}
 
 	@Override

@@ -38,7 +38,7 @@ Correo Electronico
 <input type="email" id="correo" name="correo"value="${cliente.correo }"/>
 <br/><br>
 <button type="submit">Guardar</button>
-<button type="button" onClick="windows.location.href='/ismac-spring-facturas-web/clientes/findAll'; return false">Cancelar</button>
+<button type="button" onClick="window.location.href='/ismac-spring-factura-web/clientes/findAll'; return false">Cancelar</button>
 
 </form>
 </body>

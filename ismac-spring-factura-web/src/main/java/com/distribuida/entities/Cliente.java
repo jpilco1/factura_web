@@ -64,7 +64,7 @@ public class Cliente {
 	 * @param correo
 	 * @param telefono
 	 */
-	public Cliente(int idCliente, String nombre, String apellido, String cedula, int edad, Date fechaNacimiento,
+	public Cliente(int idCliente,String cedula, String nombre, String apellido,  int edad, Date fechaNacimiento,
 			String direccion, String correo, String telefono) {
 		this.idCliente = idCliente;
 		this.nombre = nombre;
@@ -88,6 +88,14 @@ public class Cliente {
 	public void setIdCliente(int idCliente) {
 		this.idCliente = idCliente;
 	}
+	
+	public String getCedula() {
+		return cedula;
+	}
+
+	public void setCedula(String cedula) {
+		this.cedula = cedula;
+	}
 
 	public String getNombre() {
 		return nombre;
@@ -105,13 +113,7 @@ public class Cliente {
 		this.apellido = apellido;
 	}
 
-	public String getCedula() {
-		return cedula;
-	}
-
-	public void setCedula(String cedula) {
-		this.cedula = cedula;
-	}
+	
 
 	public int getEdad() {
 		return edad;
